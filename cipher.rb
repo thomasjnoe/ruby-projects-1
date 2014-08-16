@@ -1,4 +1,4 @@
-def caeser_cipher(string, number)
+def caesar_cipher(string, number)
 	new_string = []
 	letters = string.split("")
 	letters.each do |letter|
@@ -15,8 +15,8 @@ def caeser_cipher(string, number)
 		end
 		new_string.push(letter)
 	end
-	puts new_string.join("")
+	new_string.join("")
 end
 
-caeser_cipher('What a string!', 5)
-caeser_cipher('Bmfy f xywnsl!', -5)
+caesar_cipher('What a string!', 5)
+caesar_cipher('Bmfy f xywnsl!', -5)
